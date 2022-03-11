@@ -101,8 +101,7 @@ choiceC.addEventListener("click", processAnswer);
 choiceD.addEventListener("click", processAnswer);
 
 function processAnswer() {
-  var selectedAnswer = EventTarget
-  var incorrect = questionsList.answers.correct
+
 
 
   if (currentQuestion+1 === questionsList.length) {
