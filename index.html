@@ -8,36 +8,49 @@
   <link rel = "stylesheet" href = "assets/css/main.css">
 </head>
 <body>
+  
+  <!-- Header -->
   <header>
     <h1>JavaScript Quiz</h1>
-    <div id="Timer"> <h1>Timerish</h1></div>
+  
+    <h1 id="timer">30</h1>
+    
   </header>
 
 
 
-
+  <!-- Main body, contains the quiz and pre/post quiz info -->
   <div class="container">
-    <div class="start">
-      <button class="start-btn">Start</button>
-    </div>
     
-    <h2>question</h2>
-    
-    <div class="answer-choices">
-      <button class="choice">answer 1</button>
-      <button class="choice">answer 2</button>
-      <button class="choice">answer 3</button>
-      <button class="choice">answer 4</button>
+    <!-- start button and pre quiz screen -->
+    <button id="start-btn">Start</button>
+
+    <!-- actual quiz (question and answer buttons) -->
+    <div id="quiz" class="hide">
+      <h1 id="question"></h1>
+      
+      <div class="answer-choices">
+        <button id="choice-a" class="choices">answer 1</button>
+        <button id="choice-b" class="choices">answer 2</button>
+        <button id="choice-c" class="choices">answer 3</button>
+        <button id="choice-d" class="choices">answer 4</button>
+      </div>
     </div>
+
+    <!-- post quiz screen -->
+    <div id="results" class="hide">
+      <h1>High Scores: </h1>
+    </div>
+
   </div>
 
+  <!-- says if you got the answer right or not, under the main container -->
 
-  <div class="feedback">
-    <h1>you fool... that ain't it</h1>
-  </div>
-
+  <h1 id="feedback"></h1>
 
 
-<script src="/homework/unit-4-javascript-quiz/assets/js/script.js"></script>
+
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
